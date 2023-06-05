@@ -71,6 +71,11 @@ pub enum Opcode {
     AssertEq,
     Call,
     Ret,
+    Ext,
+}
+
+pub trait ExternalInvoke {
+    fn external_implementation();
 }
 
 impl Instruction {
